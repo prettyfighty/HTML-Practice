@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day02-01.html</title>
+</head>
+<body>
+    
+    <form action="">
+        <!-- 法1 label和input分開, 則須有for及id屬性 -->
+        <label for="userName">姓名</label>
+        <input type="text" id="userName">
+        <br>
+        <!-- 法2 label將input包起來, 就不用for及id屬性 -->
+        <label>
+            密碼
+            <input type="password">
+        </label>
+        <br>
+        <!-- 更多type的介紹, 可用手機瀏覽看差別 -->
+        <label>信箱</label>
+        <input type="email">
+        <br>
+        <label>電話</label>
+        <input type="tel">
+        <br>
+        <label>數字</label>
+        <input type="number" min="10" max="100">
+        <br>
+        <label>網址</label>
+        <input type="url">
+        <br>
+        <label>區間</label>
+        <input type="range">
+        <br>
+        <label>色彩</label>
+        <input type="color">
+        <br>
+        <label>生日</label>
+        <input type="date">
+        <br>
+        <label>時間</label>
+        <input type="time">
+        <br>
+        <label>搜尋</label>
+        <input type="search">
+        <br>
+        <label>檔案</label>
+        <input type="file"">
+        <br>
+        <label>性別</label>
+        <label><input type="radio" name="sex"> 男</label>
+        <label><input type="radio" name="sex"> 女</label>
+        <label><input type="radio" name="sex"> 未知</label>
+        <br>
+        <label>興趣</label>
+        <!-- 用label把input包起來, 即可點選文字就選到checkbox -->
+        <label><input type="checkbox"> 電影</label>
+        <label><input type="checkbox"> 日劇</label>
+        <label><input type="checkbox"> 韓劇</label>
+        <br>
+        <label>備註</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <label for="">地點</label>
+        <!-- 下拉式選單 -->
+        <select name="" id="">
+            <option value="">請選擇</option>
+            <option value="">台北市</option>
+            <option value="">新北市</option>
+            <option value="">基隆市</option>
+            <option value="">新竹市</option>
+        </select>
+        <br>
+        <input type="button" value="確定">
+    </form>
+
+    <!-- 快速打法
+    input:c checkbox / color
+    input:s submit / search
+    input:r radio / range
+    input:p password
+    input:u url -->
+
+
+
+</body>
+</html>
