@@ -6,14 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* 群組式宣告 */
         h1, h2{
             font-size: 40px;
             font-weight: normal;
+        }
+        /* 層疊式宣告+群組式宣告 */
+        .news h2, .events h2{
+            color: blue;
+            font-size: 30px;
         }
     </style>
 </head>
 <body>
     <h1>title 1</h1>
     <h2>title 2</h2>
+
+    <div class="news">
+        <h2>News Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, iure. Explicabo perspiciatis quisquam, obcaecati facere necessitatibus dolorem ipsa quas beatae sunt minus at incidunt, accusantium possimus ab animi fuga. Voluptates!</p>
+    </div>
+    <div class="events">
+        <h2>Events Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, iure. Explicabo perspiciatis quisquam, obcaecati facere necessitatibus dolorem ipsa quas beatae sunt minus at incidunt, accusantium possimus ab animi fuga. Voluptates!</p>
+    </div>
 </body>
 </html>
