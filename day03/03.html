@@ -6,23 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p{
-            color: red;
-            font-size: 30px;
+        /* ID的優先權最大 */
+        #amos{
+            color: gray;
+        }
+        /* 同時擁有sp和box */
+        .sp.box{
+            color: pink;
+        }
+        /* tag裡的class優先權小於class裡的class */
+        p.box{
+            color: black;
         }
         .sp{
             color: green;
         }
-
-
-
+        .box{
+            color: blue;
+        }
+        p{
+            color: red;
+            font-size: 30px;
+        }
     </style>
 </head>
 <body>
     
+    <p class="sp box" id="amos">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos exercitationem beatae provident dolor quaerat in doloribus a, ipsam molestiae atque iste, delectus sequi doloremque repudiandae! Nobis eligendi vero nam deserunt.</p>
+    <p class="sp box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos exercitationem beatae provident dolor quaerat in doloribus a, ipsam molestiae atque iste, delectus sequi doloremque repudiandae! Nobis eligendi vero nam deserunt.</p>
     <p class="sp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos exercitationem beatae provident dolor quaerat in doloribus a, ipsam molestiae atque iste, delectus sequi doloremque repudiandae! Nobis eligendi vero nam deserunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos exercitationem beatae provident dolor quaerat in doloribus a, ipsam molestiae atque iste, delectus sequi doloremque repudiandae! Nobis eligendi vero nam deserunt.</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos exercitationem beatae provident dolor quaerat in doloribus a, ipsam molestiae atque iste, delectus sequi doloremque repudiandae! Nobis eligendi vero nam deserunt.</p>
+    <p class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos exercitationem beatae provident dolor quaerat in doloribus a, ipsam molestiae atque iste, delectus sequi doloremque repudiandae! Nobis eligendi vero nam deserunt.</p>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos exercitationem beatae provident dolor quaerat in doloribus a, ipsam molestiae atque iste, delectus sequi doloremque repudiandae! Nobis eligendi vero nam deserunt.</p>
 
 
