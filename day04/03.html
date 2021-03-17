@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .wrap{
+            width: 800px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        
+        .col{
+            display: flex;
+        }
+        .col .pic{
+            margin: 15px 10px 10px;
+            width: 100%;
+        }
+        
+        .col:nth-child(2n){
+            flex-direction: row-reverse;
+        }
+        .col + .col {
+            border-top: 1px solid #aaa;
+        }
+        .col .text{
+            margin: 0 10px;
+            text-align: justify;
+            align-self: center;
+        }
+        .col h2{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="col">
+            <div class="pic">
+                <img src="https://picsum.photos/300/300/?random=1">
+            </div>
+            <div class="text">
+                <h2>title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus veniam architecto cum sapiente inventore sunt, deserunt modi accusantium odit error voluptatibus doloremque suscipit obcaecati consequuntur nisi officiis necessitatibus assumenda sint deleniti eos rerum eaque. Voluptatem provident deserunt pariatur earum sed.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="pic">
+                <img src="https://picsum.photos/300/300/?random=1">
+            </div>
+            <div class="text">
+                <h2>title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus veniam architecto cum sapiente inventore sunt, deserunt modi accusantium odit error voluptatibus doloremque suscipit obcaecati consequuntur nisi officiis necessitatibus assumenda sint deleniti eos rerum eaque. Voluptatem provident deserunt pariatur earum sed.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="pic">
+                <img src="https://picsum.photos/300/300/?random=1">
+            </div>
+            <div class="text">
+                <h2>title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus veniam architecto cum sapiente inventore sunt, deserunt modi accusantium odit error voluptatibus doloremque suscipit obcaecati consequuntur nisi officiis necessitatibus assumenda sint deleniti eos rerum eaque. Voluptatem provident deserunt pariatur earum sed.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="pic">
+                <img src="https://picsum.photos/300/300/?random=1">
+            </div>
+            <div class="text">
+                <h2>title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus veniam architecto cum sapiente inventore sunt, deserunt modi accusantium odit error voluptatibus doloremque suscipit obcaecati consequuntur nisi officiis necessitatibus assumenda sint deleniti eos rerum eaque. Voluptatem provident deserunt pariatur earum sed.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="pic">
+                <img src="https://picsum.photos/300/300/?random=1">
+            </div>
+            <div class="text">
+                <h2>title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus veniam architecto cum sapiente inventore sunt, deserunt modi accusantium odit error voluptatibus doloremque suscipit obcaecati consequuntur nisi officiis necessitatibus assumenda sint deleniti eos rerum eaque. Voluptatem provident deserunt pariatur earum sed.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
