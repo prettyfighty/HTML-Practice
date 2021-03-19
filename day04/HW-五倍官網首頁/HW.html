@@ -12,7 +12,8 @@
             list-style: none;
         }
         .wrap{
-            width: 1200px;
+            width: 100%;
+            max-width: 1440px;
         }
         .header{
             width: 100%;
@@ -22,6 +23,7 @@
             z-index: 1;
             display: flex;
             justify-content: space-between;
+            box-shadow: 0 3px 10px rgba(0,0,0,.5);
         }
         .logo a{
             display: inline-block;
@@ -30,6 +32,10 @@
             color: #000;
             font-size: 18px;
             padding: 20px;
+            transition: .3s;
+        }
+        .logo a:hover{
+            color: #f00;
         }
         .nav{
             margin: 10px 25px;
@@ -40,6 +46,24 @@
             text-decoration: none;
             color: #000;
             padding: 10px 15px;
+            transition: .3s;
+            position: relative;
+        }
+        .nav a:hover{
+            color: #f00;
+        }
+        .nav a::after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            bottom: -14px;
+            border-bottom: 3px solid #f00;
+            transition: .3s;
+        }
+        .nav a:hover::after{
+            left: 10%;
+            right: 10%;
         }
         .hc .container{
             position: relative;
