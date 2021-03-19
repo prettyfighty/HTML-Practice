@@ -326,11 +326,11 @@
         /* <!-- courses --> */
         .cs{
             background-color: #2a2a3a;
-            height: 800px;
+            height: 1200px;
         }
         .cs .short-cs{
             display: flex;
-            padding: 150px 100px 150px 150px;
+            padding: 150px 100px 0 150px;
         }
         .cs .guideline{
             width: 46%;
@@ -370,6 +370,7 @@
             height: 220px;
             padding: 20px;
             margin-left: 30px;
+            /* clip-path: polygon(28% 76%, 0 100%, 100% 100%); */
         }
         .cs .example h3{
             color: #fff;
@@ -396,6 +397,57 @@
         }
         .cs .example a:hover:after{
             transform: translateX(5px);
+        }
+        .cs .recent-cs{
+            padding: 0 60px;
+        }
+        .cs .recent-cs h3{
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 0.5em;
+
+        }
+        .cs .recent-cs .container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .cs .recent-cs .container a:not(:last-child){
+            text-decoration: none;
+            display: block;
+            border-radius: 10px;
+            transition: transform .05s, box-shadow .05s;
+        }
+        .cs .recent-cs .container a:hover:not(:last-child){
+            transform: translateY(-15px);
+            box-shadow: 0 15px #f33;
+        }
+        .cs .recent-cs .content{
+            background-color: #aff;
+            border-radius: 10px;
+            width: 375px;
+            height: 350px;
+            margin: 10px 0px 0px 0px;
+        }
+        .cs .recent-cs .content .pic{}
+        .cs .recent-cs .content img{}
+        .cs .recent-cs .content .txt{}
+        .cs .recent-cs .more-cs{
+            display: inline-block;
+            align-self: center;
+            text-decoration: none;
+            background-color: #f33;
+            color: #fff;
+            font-size: 18px;
+            padding: 15px 32px;
+            position: relative;
+            top: 40px;
+            margin: auto;
+            border-radius: 5%;
+            transition: .3s;
+        }
+        .cs .recent-cs .more-cs:hover{
+            background-color: #c11;
         }
 
     </style>
@@ -534,7 +586,13 @@
 
                         </div>
                         <div class="txt">
-
+                            <div class="classno">
+                                <span>2021 / 5 月班</span>
+                            </div>
+                            <div class="classtc">
+                                <div class="tcname">演員：申惠善 (신혜선)</div>
+                                <span>入門課程</span>
+                            </div>
                         </div>
                     </div></a>
                     <a href="#"><div class="content">
@@ -542,7 +600,13 @@
 
                         </div>
                         <div class="txt">
-
+                            <div class="classno">
+                                <span>2021 / 5 月班</span>
+                            </div>
+                            <div class="classtc">
+                                <div class="tcname">演員：申惠善 (신혜선)</div>
+                                <span>入門課程</span>
+                            </div>
                         </div>
                     </div></a>
                     <a href="#"><div class="content">
@@ -550,7 +614,13 @@
 
                         </div>
                         <div class="txt">
-
+                            <div class="classno">
+                                <span>2021 / 5 月班</span>
+                            </div>
+                            <div class="classtc">
+                                <div class="tcname">演員：申惠善 (신혜선)</div>
+                                <span>入門課程</span>
+                            </div>
                         </div>
                     </div></a>
                     <a href="#" class="more-cs">看更多課程</a>
