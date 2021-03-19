@@ -19,6 +19,8 @@
             width: 100%;
             max-width: 1440px;
         }
+
+        /* <!-- header導覽列 -->*/
         .header{
             width: 100%;
             background-color: #fff;
@@ -28,7 +30,7 @@
             z-index: 1;
             display: flex;
             justify-content: space-between;
-            box-shadow: 0 3px 10px rgba(0,0,0,.5);
+            box-shadow: 0 5px 15px rgba(100,100,100,.1);
         }
         .logo a{
             display: inline-block;
@@ -70,6 +72,8 @@
             left: 10%;
             right: 10%;
         }
+
+        /* <!-- banner content --> */
         .bn .container{
             position: relative;
             background: url(hcimg.jpg) no-repeat center top / cover;
@@ -112,6 +116,8 @@
         .bn a:hover{
             background-color: #c11;
         }
+
+        /* <!-- feature content --> */
         .fc{
             display: flex;
             flex-wrap: wrap;
@@ -139,6 +145,15 @@
             font-size: 30px;
             padding-bottom: 1em;
             color: #444;
+            position: relative;
+        }
+        .fc .title h2::after{
+            content: '';
+            position: absolute;
+            left: 48%;
+            right: 48%;
+            bottom: 20px;
+            border-bottom: 2px solid #f00;
         }
         .fc .title p{
             font-size: 20px;
@@ -176,6 +191,137 @@
             line-height: 1.5em;
         }
 
+        /* <!-- teachers --> */
+        .tc{
+            display: flex;
+            flex-wrap: wrap;
+            background: #fafafa;
+            /* background-color: #aaa; */
+        }
+        .tc .title-container{
+            margin: auto;
+            padding: 40px;
+        }
+        .tc .title{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: auto;
+            box-sizing: border-box;
+            width: 65%;
+            padding: 20px 10px 20px 20px;
+            text-align: justify;
+        }
+        .tc .title h2{
+            font-size: 30px;
+            padding-bottom: 1em;
+            color: #444;
+            position: relative;
+        }
+        .tc .title h2::after{
+            content: '';
+            position: absolute;
+            left: 0%;
+            right: 60%;
+            bottom: 20px;
+            border-bottom: 2px solid #f00;
+        }
+        .tc .title p{
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+        }
+        .tc .container{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 700px;
+            background: #fafafa;
+        }
+        .tc .content{
+            display: flex;
+            background-color: #fff;
+            width: 55%;
+            box-shadow: 0px 3px 15px rgba(0, 0, 0, .1);
+        }
+        .tc .content .pic{
+            width: 35%;
+            padding: 0 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tc .content .pic img{
+            width: 100%;
+            padding: 30px 0;
+            border-radius: 50%;
+            vertical-align: top;
+        }
+        .tc .content .pic-a a{
+            text-decoration: none;
+            display: inline-block;
+        }
+        .tc .content .txt{
+            width: 65%;
+            padding: 40px 20px 40px 0;
+            text-align: justify;
+            color: #444;
+        }
+        .tc .content .txt h5{
+            font-size: 16px;
+            font-weight: normal;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+            position: relative;
+        }
+        .tc .content h5::after{
+            content: '';
+            position: absolute;
+            left: 0%;
+            right: 91%;
+            bottom: 0px;
+            border-bottom: 2px solid #f00;
+        }
+        .tc .content .txt h3{
+            font-size: 20px;
+            font-weight: 700;
+            padding-bottom: 0.5em;
+            margin-bottom: 0.5em;
+        }
+        .tc .content .txt article{
+            line-height: 1.5;
+        }
+        .tc .content .txt p{
+            margin-bottom: 0.5em;
+        }
+        .tc .other-title{
+            margin-top: 10px;
+        }
+        .tc .other-title p{
+            position: relative;
+        }
+        .tc .other-title p::after{
+            content: '';
+            position: absolute;
+            left: 23%;
+            right: 0;
+            bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .tc .other-products a{
+            display: inline-block;
+            text-decoration: none;
+            color: #f33;
+            padding: 5px 10px;
+            margin: 5px;
+            border: 1px solid #f33;
+            border-radius: 5px;
+            transition: .3s;
+        }
+        .tc .other-products a:hover{
+            background-color: #f33;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -249,22 +395,66 @@
 
         <!-- teachers -->
         <div class="tc">
-            <div class="title">
-                <h2>講師陣容</h2>
+            <div class="title-container">
+                <div class="title">
+                    <h2>講師陣容</h2>
+                    <p>我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。</p>
+                </div>
             </div>
             <div class="container">
                 <div class="content">
                     <div class="pic">
-
+                        <img src="tcpic01.jpg" alt="">
+                        <div class="pic-a">
+                            <a href="#">O</a>
+                            <a href="#">O</a>
+                            <a href="#">O</a>
+                        </div>
                     </div>
                     <div class="txt">
-
+                        <h5>韓國女演員</h5>
+                        <h3>申惠善 (신혜선)</h3>
+                        <article>
+                            <p>韓國女演員。2012年12月，申惠善在KBS月火劇《學校2013》實名飾演學生並正式以演員身份出道。</p>
+                            <p>2017年9月，在KBS週末劇<strong>《我的黃金光輝人生》</strong>，首次擔任女主角[2]，該劇播出後收視率一路走高，成為KBS電視台2017年電視劇收視冠軍，並創下47.5的收視紀錄，人氣急升。</p>
+                            <p>後續主演<storng>《雖然30但仍17》</storng>、<strong>《死之詠贊》</strong>、《僅此一次的愛情》等電視劇，分別飾演小提琴家、聲樂家、芭蕾舞者等角色，而有「御用藝術家」、「值得信任的演員」、「名品演技」之稱。</p>
+                            <p>2020年12月憑<strong>《哲仁王后》</strong>中飾演金昭容一角，再次攀上事業高峰。 </p>
+                            <br>
+                            <div class="other-title">
+                                <p>其他影視作品</p>
+                            </div>
+                            <div class="other-products">
+                                <a href="#">翻供</a>
+                                <a href="#">秘密森林</a>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
         </div>
 
-
+        <!-- courses -->
+        <div class="cs">
+            <div class="short-cs">
+                <div class="guidline">
+                    <h2>短期實體課程</h2>
+                    <p>目標清晰的短期課程，針對單一技術所開設。適合在職進修的工程師、PM，或對網頁設計有興趣的你。</p>
+                </div>
+                <div class="example">
+                    <h3>後端課程</h3>
+                    <p>專屬五倍的後端課程 Ruby on Rails，一起踏入後端領域吧！</p>
+                    <a href="#">前往課程</a>
+                </div>
+            </div>
+            <div class="recent-cs">
+                <h3>近期課程</h3>
+                <div class="container">
+                    <div class="content"></div>
+                    <div class="content"></div>
+                    <div class="content"></div>
+                </div>
+            </div>
+        </div>
 
 
 
