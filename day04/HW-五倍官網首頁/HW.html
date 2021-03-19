@@ -322,6 +322,82 @@
             background-color: #f33;
             color: #fff;
         }
+        
+        /* <!-- courses --> */
+        .cs{
+            background-color: #2a2a3a;
+            height: 800px;
+        }
+        .cs .short-cs{
+            display: flex;
+            padding: 150px 100px 150px 150px;
+        }
+        .cs .guideline{
+            width: 46%;
+            height: 400px;
+            padding: 10px 10px;
+        }
+        .cs .guideline h2{
+            color: #fff;
+            font-size: 30px;
+            padding-bottom: 0.5em;
+            margin-bottom: 0.5em;
+            position: relative;
+        }
+        .cs .guideline h2::after{
+            content: '';
+            position: absolute;
+            left: 0%;
+            right: 90%;
+            bottom: 5px;
+            border-bottom: 2px solid #f00;
+        }
+        .cs .guideline p{
+            color: rgba(160, 166, 177, 1);
+            font-size: 20px;
+            margin-bottom: 0.5em;
+            line-height: 1.5;
+        }
+        .cs .example-container{
+            width: 54%;
+            height: 400px;
+            display: flex;
+            align-items: center;
+        }
+        .cs .example{
+            background-color: rgb(255, 51, 68);
+            width: 75%;
+            height: 220px;
+            padding: 20px;
+            margin-left: 30px;
+        }
+        .cs .example h3{
+            color: #fff;
+            font-size: 28px;
+            margin-top: 0.65em;
+            padding-bottom: 0.5em;
+            margin-bottom: 0.5em;
+        }
+        .cs .example p{
+            color: #fff;
+        }
+        .cs .example a{
+            text-decoration: none;
+            color: #fff;
+            position: relative;
+        }
+        .cs .example a:hover{
+            text-decoration: underline;
+        }
+        .cs .example a::after{
+            content: '>';
+            margin-left: 5px;
+            position: absolute;
+        }
+        .cs .example a:hover:after{
+            transform: translateX(5px);
+        }
+
     </style>
 </head>
 <body>
@@ -436,22 +512,48 @@
         <!-- courses -->
         <div class="cs">
             <div class="short-cs">
-                <div class="guidline">
+                <div class="guideline">
                     <h2>短期實體課程</h2>
                     <p>目標清晰的短期課程，針對單一技術所開設。適合在職進修的工程師、PM，或對網頁設計有興趣的你。</p>
                 </div>
-                <div class="example">
-                    <h3>後端課程</h3>
-                    <p>專屬五倍的後端課程 Ruby on Rails，一起踏入後端領域吧！</p>
-                    <a href="#">前往課程</a>
+                <div class="example-container">
+                    <div class="example">
+                        <h3>後端課程</h3>
+                        <p>專屬五倍的後端課程 Ruby on Rails，一起踏入後端領域吧！</p>
+                        <br>
+                        <br>
+                        <a href="#">前往課程</a>
+                    </div>
                 </div>
             </div>
             <div class="recent-cs">
                 <h3>近期課程</h3>
                 <div class="container">
-                    <div class="content"></div>
-                    <div class="content"></div>
-                    <div class="content"></div>
+                    <a href="#"><div class="content">
+                        <div class="pic">
+
+                        </div>
+                        <div class="txt">
+
+                        </div>
+                    </div></a>
+                    <a href="#"><div class="content">
+                        <div class="pic">
+
+                        </div>
+                        <div class="txt">
+
+                        </div>
+                    </div></a>
+                    <a href="#"><div class="content">
+                        <div class="pic">
+
+                        </div>
+                        <div class="txt">
+
+                        </div>
+                    </div></a>
+                    <a href="#" class="more-cs">看更多課程</a>
                 </div>
             </div>
         </div>
