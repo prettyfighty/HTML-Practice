@@ -11,6 +11,10 @@
             padding: 0;
             list-style: none;
         }
+        *::selection{
+            color: #fff;
+            background-color: #f33;
+        }
         .wrap{
             width: 100%;
             max-width: 1440px;
@@ -20,6 +24,7 @@
             background-color: #fff;
             height: 65px;
             position: fixed;
+            top: 0px;
             z-index: 1;
             display: flex;
             justify-content: space-between;
@@ -65,68 +70,109 @@
             left: 10%;
             right: 10%;
         }
-        .hc .container{
+        .bn .container{
             position: relative;
-            top: 65px;
+            background: url(hcimg.jpg) no-repeat center top / cover;
             width: 100%;
-            height: 750px;
+            max-width: 1440px;
+            height: 650px;
+            margin-top: 65px;
         }
-        .hc img{
-            width: 100%;
+        .bn .info{
+            position: relative;
+            top: 85px;
+            left: 165px;
+            width: 70%;
         }
-        .hc .info{
-            position: absolute;
-            top: 110px;
-            left: 170px;
-            width: 100%;
-        }
-        .hc h1{
+        .bn h1{
             color: #fff;
             font-size: 60px;
             font-weight: 900;
             padding: 20px;
         }
-        .hc p{
+        .bn p{
             color: #fff;
-            display: inline-block;
-            background-color: #f33;
+            display: block;
+            padding-left: 20px;
             font-size: 20px;
-            position: relative;
-            left: 22px;
         }
-        .hc a{
+        .bn a{
             display: inline-block;
             text-decoration: none;
             background-color: #f33;
             color: #fff;
-            padding: 15px 20px;
+            font-size: 16px;
+            padding: 17px 35px;
             position: relative;
             top: 50px;
             left: 22px;
             border-radius: 5%;
+            transition: .3s;
         }
+        .bn a:hover{
+            background-color: #c11;
+        }
+        .fc{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* .fc .title::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 10em solid #f00;
+            border-left: 30em solid #000;
+            border-right: 50em solid #000;
+        } */
         .fc .title{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 40px 40px 10px 40px;
             text-align: center;
+        }
+        .fc .title h2{
+            font-size: 30px;
+            padding-bottom: 1em;
+            color: #444;
+        }
+        .fc .title p{
+            font-size: 20px;
+            color: #444;
         }
         .fc .container{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
+        .fc .content{
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            width: 26.5%;
+            margin: 25px;
+        }
+        .fc .content .pic{
+            padding: 27px 60px 18px 60px;
+        }
         .fc img{
             width: 100%;
+            vertical-align: middle;
         }
-        .fc .content{
-            box-sizing: border-box;
-            width: 320px;
-            margin: 30px;
+        .fc .content .txt{    
             text-align: center;
+            color: #444;
         }
         .fc .content h3{
+            font-size: 18px;
             margin: 0 10px 10px;
         }
         .fc .content p{
-            font-size: 15px;
+            font-size: 16px;
             line-height: 1.5em;
         }
 
@@ -136,6 +182,7 @@
 
     <div class="wrap">
 
+        <!-- header導覽列 -->
         <div class="header">
             <div class="logo">
                 <a href="#"><img src="rubyicon.jpg">五倍紅寶石．專業程式教育機構</a>
@@ -150,45 +197,72 @@
             </div>
         </div>
 
-        <div class="hc">
-            <div class="hc container">
-                <img src="hcimg.jpg">
-                <div class="hc info">
+        <!-- banner content -->
+        <div class="bn">
+            <div class="container">
+                <div class="info">
                     <h1>五倍學習，突破你的可能性</h1>
                     <p>掌握實戰經驗，從初心素人到業界接軌，讓專業師資為你重新定義程式教育。</p>
-                    <br>
                     <a href="#">立即選課</a>
                 </div>
             </div>
         </div>
 
+        <!-- feature content -->
         <div class="fc">
-            <div class="fc title">
+            <div class="title">
                 <h2>不只停留在教你釣魚，更引領你乘風破浪</h2>
                 <p>我們不藏私的教學，讓所有人都能發揮超越五倍的價值。</p>
             </div>
-            <div class="fc container">
-                <div class="fc content">
-                    <img src="https://60503225c3ba680007f5a110--5xtraining.netlify.app/_next/static/images/learning-145b2bca330596c38a73e92e35c8e42d.png">
-                    <h3>鍛鍊實力，主導學習</h3>
-                    <p>搭配最新技術版本，掌握業界脈動，</p>
-                    <p>與需求緊密結合，鍛鍊程式實力。</p>
+            <div class="container">
+                <div class="content">
+                    <div class="pic">                        
+                        <img src="https://60503225c3ba680007f5a110--5xtraining.netlify.app/_next/static/images/learning-145b2bca330596c38a73e92e35c8e42d.png">
+                    </div>
+                    <div class="txt">
+                        <h3>鍛鍊實力，主導學習</h3>
+                        <p>搭配最新技術版本，掌握業界脈動，</p>
+                        <p>與需求緊密結合，鍛鍊程式實力。</p>
+                    </div>
                 </div>
-                <div class="fc content">
-                    <img src="https://60503225c3ba680007f5a110--5xtraining.netlify.app/_next/static/images/plan-ad32f52a511fde40f36d5e55302554f4.png">
-                    <h3>完整規劃，絕不漏接</h3>
-                    <p>線上補課、線下討論與社群活動，</p>
-                    <p>確保學員擁有充份且多元的學習資源和支持系統。</p>
+                <div class="content">
+                    <div class="pic">
+                        <img src="https://60503225c3ba680007f5a110--5xtraining.netlify.app/_next/static/images/plan-ad32f52a511fde40f36d5e55302554f4.png"></div>
+                    <div class="txt">
+                        <h3>完整規劃，絕不漏接</h3>
+                        <p>線上補課、線下討論與社群活動，</p>
+                        <p>確保學員擁有充份且多元的學習資源和支持系統。</p>
+                    </div>
                 </div>
-                <div class="fc content">
-                    <img src="https://60503225c3ba680007f5a110--5xtraining.netlify.app/_next/static/images/challenge-4ead379b6828fce2e2b000cb65c89615.png">
-                    <h3>挑戰困境，突破職涯</h3>
-                    <p>無論新手塊領域轉職，或在職工程師深度進修，</p>
-                    <p>讓五倍為你解構學習，突破困境。</p>
+                <div class="content">
+                    <div class="pic">
+                        <img src="https://60503225c3ba680007f5a110--5xtraining.netlify.app/_next/static/images/challenge-4ead379b6828fce2e2b000cb65c89615.png">
+                    </div>
+                    <div class="txt">
+                        <h3>挑戰困境，突破職涯</h3>
+                        <p>無論新手塊領域轉職，或在職工程師深度進修，</p>
+                        <p>讓五倍為你解構學習，突破困境。</p>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <!-- teachers -->
+        <div class="tc">
+            <div class="title">
+                <h2>講師陣容</h2>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="pic">
+
+                    </div>
+                    <div class="txt">
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
