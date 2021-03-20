@@ -707,6 +707,81 @@
             transform: translateX(10px);
         }
         
+        /* <!-- messages --> */
+
+        .ms {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            padding: 145px 0;
+        }
+        .ms .title {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 40px 40px 25px 40px;
+            text-align: center;
+        }
+        .ms .title h2 {
+            font-size: 30px;
+            padding-bottom: 1em;
+            color: #444;
+            position: relative;
+        }
+        .ms .title h2::after {
+            content: '';
+            position: absolute;
+            left: 48.7%;
+            right: 48.7%;
+            bottom: 20px;
+            border-bottom: 2px solid #f00;
+        }
+        .ms .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 1440px;
+        }
+        .ms .content {
+            box-sizing: border-box;
+            box-shadow: 0px 3px 15px rgba(0, 0, 0, .1);
+            width: 23%;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+        .ms .content .txt {
+            padding: .3em;
+        }
+        .ms .content p {
+            color: #394150;
+            font-size: 16px;
+            line-height: 1.5em;
+            text-align: justify;
+            padding-bottom: 1em;
+        }
+        .ms .content .pic {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            margin-top: 0;
+        }
+        .ms img {
+            height: 100%;
+            border-radius: 100%;
+            vertical-align: middle;
+        }
+        .ms .content span{
+            font-size: 14px;
+            display: block;
+            margin-left: .7em;
+            color: #a0a6b1;
+        }
+
     </style>
 </head>
 
@@ -953,7 +1028,50 @@
             </div>
         </div>
 
-
+        <!-- messages -->
+        <div class="ms">
+            <div class="title">
+                <h2>在五倍，我們一起超越五倍</h2>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="txt">
+                        <p>此劇講述生活在自由的現代大韓民國的男人－青瓦台的廚師張奉煥的靈魂穿越到朝鮮王朝時代王宮內哲宗的王妃金昭容體內後所展開的故事。台灣由friDay影音12月13日起每週日一早上10點獨家上線。</p>
+                    </div>
+                    <div class="pic">
+                        <img src="mspic.jpg" alt="">
+                        <span>哲仁王后</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="txt">
+                        <p>此劇講述陰錯陽差成為富人的女人徐知安，跌入人生低谷時，從中領悟幸福的故事。主要探討由父母的社會階級（如：能力、財富、背景）來決定子女的階級，來回答現今社會中陷入疑惑的人們「幸福是什麼？」，來作為基本概念，是一部探討人生、人性的電視劇。以女主角的視角出發，檢視在人生起伏震盪的過程中，對親情、愛情、事業與幸福的定義。</p>
+                    </div>
+                    <div class="pic">
+                        <img src="mspic.jpg" alt="">
+                        <span>我的黃金光輝人生</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="txt">
+                        <p>此劇講述年齡和肉體30歲、但是精神還停留在17歲的禹書莉，與誤以為自己害死了禹書莉的封閉孔宇振，兩人相遇後發生的療癒故事。</p>
+                    </div>
+                    <div class="pic">
+                        <img src="mspic.jpg" alt="">
+                        <span>雖然30但仍17</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="txt">
+                        <p>此劇講述朝鮮最早的公費留學生尹心悳和她的戀人、天才劇作家金佑鎭在玄海灘殉情的故事。</p>
+                    </div>
+                    <div class="pic">
+                        <img src="mspic.jpg" alt="">
+                        <span>死之詠贊</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
