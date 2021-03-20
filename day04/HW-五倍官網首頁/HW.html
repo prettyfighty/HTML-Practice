@@ -80,12 +80,18 @@
         .bn .container{
             position: relative;
             display: flex;
-            background: url(hcimg02.jpg) no-repeat center top / cover;
+            /* background-color: rgba(42, 42, 58, .2); */
+            background: 
+                linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,.15) 33%, rgba(255,255,255,0) 50%) no-repeat center bottom / cover,
+                url(bnimg02.jpg) no-repeat center top / cover;
             width: 100%;
             /* max-width: 1440px; */
             height: 600px;
             margin-top: 65px;
-
+        }
+        .bn .container img{
+            width: 100%;
+            z-index: -1;
         }
         .bn .info{
             /* position: absolute; */
@@ -139,9 +145,10 @@
             left: 0;
             width: 0;
             height: 0;
-            border-top: 10em solid #f00;
-            border-left: 30em solid #000;
-            border-right: 50em solid #000;
+            border-top: 10em solid #00f;
+            border-left: 30em solid #ff0;
+            border-right: 50em solid #ff0;
+            transform: translateY(-100%);
         } */
         .fc .title{
             position: relative;
@@ -354,7 +361,6 @@
             /* padding: 150px auto 0 auto; */
         }
         .cs .guideline{
-            /* outline: 1px solid #00f; */
             /* width: 50%; */
             min-width: 360px;
             max-width: 600px;
@@ -522,6 +528,7 @@
         <!-- banner content -->
         <div class="bn">
             <div class="container">
+                <!-- <img src="hcimg02.jpg" alt=""> -->
                 <div class="info">
                     <h1>五倍學習，突破你的可能性</h1>
                     <p>掌握實戰經驗，從初心素人到業界接軌，讓專業師資為你重新定義程式教育。</p>
