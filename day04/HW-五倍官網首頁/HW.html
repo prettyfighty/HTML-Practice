@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>五倍紅寶石．專業城市教育｜實戰轉職．企業內訓．人才媒合</title>
     <style>
         *{
             margin: 0;
@@ -16,8 +16,8 @@
             background-color: #f33;
         }
         .wrap{
-            width: 100%;
-            max-width: 1440px;
+            /* width: 100%; */
+            /* max-width: 1440px; */
         }
 
         /* <!-- header導覽列 -->*/
@@ -66,7 +66,7 @@
             right: 50%;
             bottom: -14px;
             border-bottom: 3px solid #f00;
-            transition: .3s;
+            transition: .18s;
         }
         .nav a:hover::after{
             left: 10%;
@@ -74,19 +74,26 @@
         }
 
         /* <!-- banner content --> */
+        .bn{
+
+        }
         .bn .container{
             position: relative;
-            background: url(hcimg.jpg) no-repeat center top / cover;
+            display: flex;
+            background: url(hcimg02.jpg) no-repeat center top / cover;
             width: 100%;
-            max-width: 1440px;
-            height: 650px;
+            /* max-width: 1440px; */
+            height: 600px;
             margin-top: 65px;
+
         }
         .bn .info{
-            position: relative;
-            top: 85px;
-            left: 165px;
-            width: 70%;
+            /* position: absolute; */
+            margin: auto;
+            padding: 10px 40px;
+            box-sizing: border-box;
+            width: 80%;
+            height: 70%;
         }
         .bn h1{
             color: #fff;
@@ -103,7 +110,7 @@
         .bn a{
             display: inline-block;
             text-decoration: none;
-            background-color: #f33;
+            background-color: #ff3338;
             color: #fff;
             font-size: 16px;
             padding: 17px 35px;
@@ -114,13 +121,16 @@
             transition: .3s;
         }
         .bn a:hover{
-            background-color: #c11;
+            background-color: #b11;
         }
 
         /* <!-- feature content --> */
         .fc{
             display: flex;
             flex-wrap: wrap;
+            justify-content:center;
+            align-content: center;
+            padding-bottom: 200px;
         }
         /* .fc .title::before{
             content: '';
@@ -162,17 +172,18 @@
         .fc .container{
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1440px;
+
         }
         .fc .content{
-            display: flex;
-            flex-direction: column;
             box-sizing: border-box;
-            width: 26.5%;
+            width: 355px;
             margin: 25px;
         }
         .fc .content .pic{
-            padding: 27px 60px 18px 60px;
+            padding: 30px 65px;
         }
         .fc img{
             width: 100%;
@@ -195,8 +206,10 @@
         .tc{
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             background: #fafafa;
             /* background-color: #aaa; */
+            padding: 0 0 150px 0;
         }
         .tc .title-container{
             margin: auto;
@@ -208,8 +221,9 @@
             align-items: flex-start;
             margin: auto;
             box-sizing: border-box;
-            width: 65%;
-            padding: 20px 10px 20px 20px;
+            width: 75%;
+            min-width: 680px;
+            padding: 20px;
             text-align: justify;
         }
         .tc .title h2{
@@ -242,6 +256,8 @@
             display: flex;
             background-color: #fff;
             width: 55%;
+            min-width: 650px;
+            max-width: 1440px;
             box-shadow: 0px 3px 15px rgba(0, 0, 0, .1);
         }
         .tc .content .pic{
@@ -252,7 +268,7 @@
             align-items: center;
         }
         .tc .content .pic img{
-            width: 100%;
+            width: 200px;
             padding: 30px 0;
             border-radius: 50%;
             vertical-align: top;
@@ -327,15 +343,27 @@
         .cs{
             background-color: #2a2a3a;
             height: 1200px;
+            margin: auto;
+            padding: 50px 0 0 0;
         }
         .cs .short-cs{
             display: flex;
-            padding: 150px 100px 0 150px;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            /* padding: 150px auto 0 auto; */
         }
         .cs .guideline{
-            width: 46%;
-            height: 400px;
+            /* outline: 1px solid #00f; */
+            /* width: 50%; */
+            min-width: 360px;
+            max-width: 600px;
+            /* height: 400px; */
+            align-self: flex-start;
             padding: 10px 10px;
+            box-sizing: border-box;
+            margin-top: 30px;
+            margin-left: 150px;
         }
         .cs .guideline h2{
             color: #fff;
@@ -359,17 +387,26 @@
             line-height: 1.5;
         }
         .cs .example-container{
-            width: 54%;
+            flex-grow: 1;
+            max-width: 600px;
+            /* width: 50%; */
+            margin: 30px;
             height: 400px;
             display: flex;
             align-items: center;
+            /* padding-right: 30px; */
+            box-sizing: border-box;
+            margin-right: 150px;
         }
         .cs .example{
             background-color: rgb(255, 51, 68);
-            width: 75%;
+            width: 100%;
+            min-width: 360px;
+            max-width: 600px;
             height: 220px;
             padding: 20px;
-            margin-left: 30px;
+            margin: 30px;
+            /* margin-left: 30px; */
             /* clip-path: polygon(28% 76%, 0 100%, 100% 100%); */
         }
         .cs .example h3{
@@ -400,34 +437,45 @@
         }
         .cs .recent-cs{
             padding: 0 60px;
-        }
-        .cs .recent-cs h3{
-            color: #fff;
-            font-size: 24px;
-            margin-bottom: 0.5em;
-
+            display: flex;
+            flex-direction: column;
         }
         .cs .recent-cs .container{
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            max-width: 1400px;
+            margin: auto;
         }
-        .cs .recent-cs .container a:not(:last-child){
-            text-decoration: none;
-            display: block;
+        .cs .recent-cs h3{
+            width: 100%;
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 0.7em;
+
+        }
+        .cs .recent-cs .container .content{
             border-radius: 10px;
             transition: transform .05s, box-shadow .05s;
         }
-        .cs .recent-cs .container a:hover:not(:last-child){
+        .cs .recent-cs .content a{
+            text-decoration: none;
+
+        }
+        .cs .recent-cs .container .content:hover{
             transform: translateY(-15px);
             box-shadow: 0 15px #f33;
         }
         .cs .recent-cs .content{
-            background-color: #aff;
+            background-color: #fafafa;
             border-radius: 10px;
-            width: 375px;
+            width: 30%;
+            min-width: 275px;
+            max-width: 430px;
             height: 350px;
-            margin: 10px 0px 0px 0px;
+            margin: 10px 10px 0px;
         }
         .cs .recent-cs .content .pic{}
         .cs .recent-cs .content img{}
@@ -436,7 +484,7 @@
             display: inline-block;
             align-self: center;
             text-decoration: none;
-            background-color: #f33;
+            background-color: #f34;
             color: #fff;
             font-size: 18px;
             padding: 15px 32px;
@@ -447,7 +495,7 @@
             transition: .3s;
         }
         .cs .recent-cs .more-cs:hover{
-            background-color: #c11;
+            background-color: #b11;
         }
 
     </style>
@@ -579,9 +627,9 @@
                 </div>
             </div>
             <div class="recent-cs">
-                <h3>近期課程</h3>
                 <div class="container">
-                    <a href="#"><div class="content">
+                    <h3>近期課程</h3>
+                    <div class="content"><a href="#">
                         <div class="pic">
 
                         </div>
@@ -594,8 +642,8 @@
                                 <span>入門課程</span>
                             </div>
                         </div>
-                    </div></a>
-                    <a href="#"><div class="content">
+                    </a></div>
+                    <div class="content"><a href="#">
                         <div class="pic">
 
                         </div>
@@ -608,8 +656,8 @@
                                 <span>入門課程</span>
                             </div>
                         </div>
-                    </div></a>
-                    <a href="#"><div class="content">
+                    </a></div>
+                    <div class="content"><a href="#">
                         <div class="pic">
 
                         </div>
@@ -622,9 +670,9 @@
                                 <span>入門課程</span>
                             </div>
                         </div>
-                    </div></a>
-                    <a href="#" class="more-cs">看更多課程</a>
+                    </a></div>
                 </div>
+                <a href="#" class="more-cs">看更多課程</a>
             </div>
         </div>
 
