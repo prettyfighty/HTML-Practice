@@ -114,9 +114,6 @@
             background-color: #B91C1C;
         }
         /* <!-- feature content --> */
-        .fc {
-            padding-bottom: 170px;
-        }
         .fc .title {
             position: relative;
             text-align: center;
@@ -157,10 +154,14 @@
         }
 
         /* <!-- teachers --> */
-
+        .tc-outside{
+            background-color: #fff;
+        }
 
         /* <!-- courses --> */
- 
+        .cs-outside{
+            background-color: #f9fafb;
+        }
 
         /* <!-- learning paths --> */        
         .lp .content a {
@@ -364,6 +365,9 @@
                 padding: 5px 20px;
             }
 
+            .fc{
+                padding-bottom: 60px;
+            }
             .fc .title {
                 padding: 30px 30px 20px;
             }
@@ -383,6 +387,14 @@
                 padding: 20px 65px;
             }
             
+            .tc-outside::before{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 4rem;
+                clip-path: polygon(0 100%, 30% 0, 100% 100%);
+                background-color: #f9fafb;
+            }
             .tc {
                 background: #F9FAFB;
                 padding: 0 0 50px 0;
@@ -396,7 +408,7 @@
                 align-items: flex-start;
                 margin: auto;
                 box-sizing: border-box;
-                padding: 25px;
+                padding: 60px 25px 25px;
                 text-align: justify;
             }
             .tc .title h2 {
@@ -719,9 +731,17 @@
                 background-color: #B91C1C;
             }
             
+            .lp-outside::after {
+                content:'';
+                display: inline-block;
+                width: 100%;
+                height: 4rem;
+                clip-path: polygon(0 0, 30% 100%, 100% 0);
+                background-color: #F9FAFB;
+            }
             .lp {
                 background: #F9FAFB;
-                padding: 0 0 150px 0;
+                padding: 0 0 50px 0;
             }
             .lp .title {
                 box-sizing: border-box;
@@ -758,7 +778,7 @@
                 margin-bottom: 0.7em;
             }
             .lp .content {
-                background-color: #F9FAFB;
+                background-color: #fff;
                 border-radius: 10px;
                 box-shadow: 0 5px 25px rgba(10, 10, 50, .12);
                 width: 90%;
@@ -936,6 +956,7 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-content: center;
+                padding-bottom: 100px;
             }
             .fc .title {
                 display: flex;
@@ -966,12 +987,21 @@
                 padding: 20px 40px;
 
             }
+            .tc-outside::before{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 8rem;
+                clip-path: polygon(0 100%, 30% 0, 100% 100%);
+                background-color: #f9fafb;
+            }
             .tc{
                 padding-bottom: 5em;
+                background-color: #f9fafb;
             }
             .tc .title-container {
                 margin: auto;
-                padding: 50px 45px 25px;
+                padding: 0px 45px 25px;
             }
             .tc .title {
                 display: flex;
@@ -1218,7 +1248,7 @@
                 background-color: #FF133E;
             }
             .cs .example-outside::before{
-            clip-path: polygon(70% 0px, 0px 100%, 100% 100%);
+                clip-path: polygon(70% 0px, 0px 100%, 100% 100%);
                 top: .05rem;
             }
 
@@ -1347,12 +1377,21 @@
             .cs .recent-cs .more-cs:hover {
                 background-color: #B91C1C;
             }
+
+            .lp-outside::after {
+                content:'';
+                display: inline-block;
+                width: 100%;
+                height: 8.3rem;
+                clip-path: polygon(0 0, 30% 100%, 100% 0);
+                background-color: #F9FAFB;
+            }
             .lp {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 background: #F9FAFB;
-                padding: 0 0 150px 0;
+                padding: 0 0 70px 0;
             }
             .lp .title-container {
                 display: flex;
@@ -1409,7 +1448,7 @@
 
             }
             .lp .content {
-                background-color: #F9FAFB;
+                background-color: #fff;
                 border-radius: 10px;
                 box-shadow: 0px 3px 15px rgba(50, 50, 50, .1);
                 width: 30%;
@@ -1425,7 +1464,7 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-content: center;
-                padding: 145px 0;
+                padding: 60px 0 145px;
                 background-color: #fff;
             }
             .ms .title {
@@ -1445,8 +1484,8 @@
             .ms .title h2::after {
                 content: '';
                 position: absolute;
-                left: 48.7%;
-                right: 48.7%;
+                left: 47.5%;
+                right: 47.5%;
                 bottom: 20px;
                 border-bottom: 2px solid #f00;
             }
@@ -1622,6 +1661,7 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-content: center;
+                padding-bottom: 50px;
             }
             .fc .title {
                 display: flex;
@@ -1651,17 +1691,26 @@
             .fc .content .pic {
                 padding: 30px 65px;
             }
+
+            
+            .tc-outside::before{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 10rem;
+                clip-path: polygon(0 100%, 30% 0, 100% 100%);
+                background-color: #f9fafb;
+            }
             .tc {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 background: #F9FAFB;
-                /* background-color: #aaa; */
                 padding: 0 0 50px 0;
             }
             .tc .title-container {
                 margin: auto;
-                padding: 40px;
+                padding: 0 0 40px;
             }
             .tc .title {
                 display: flex;
@@ -1816,6 +1865,7 @@
                 margin: auto;
                 padding: 50px 0 0 0;
             }
+            
             .cs-outside::before{
                 content: '';
                 display: inline-block;
@@ -1833,7 +1883,9 @@
                 width: 100%;
                 height: 10rem;
                 clip-path: polygon(70% 100%, 0px 0px, 100% 0px);
-                background-color: #29303e;
+                background: linear-gradient(to bottom, #29303e, #29303e);
+                background-color: #F9FAFB;
+
                 margin-top: -1px;
             }
             .cs .short-cs {
@@ -2030,12 +2082,23 @@
             .cs .recent-cs .more-cs:hover {
                 background-color: #B91C1C;
             }
+            
+            
+            .lp-outside::after {
+                content:'';
+                display: inline-block;
+                width: 100%;
+                height: 10rem;
+                clip-path: polygon(0 0, 30% 100%, 100% 0);
+                background-color: #F9FAFB;
+            }
             .lp {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+                align-items: flex-start;
                 background: #F9FAFB;
-                padding: 0 0 150px 0;
+                padding: 0 0 50px 0;
             }
             .lp .title-container {
                 display: flex;
@@ -2044,6 +2107,7 @@
                 width: 95%;
                 max-width: 1360px;
                 min-width: 900px;
+
             }
             .lp .title {
                 display: flex;
@@ -2092,7 +2156,7 @@
 
             }
             .lp .content {
-                background-color: #F9FAFB;
+                background-color: #fff;
                 border-radius: 10px;
                 box-shadow: 0px 3px 15px rgba(50, 50, 50, .1);
                 width: 30%;
@@ -2109,7 +2173,7 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-content: center;
-                padding: 145px 0;
+                padding: 60px 0 145px;
                 background-color: #fff;
             }
             .ms .title {
@@ -2325,40 +2389,42 @@
         </div>
 
         <!-- teachers -->
-        <div class="tc">
-            <div class="title-container">
-                <div class="title">
-                    <h2>講師陣容</h2>
-                    <p>我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="content">
-                    <div class="pic">
-                        <img src="tcpic01.jpg" alt="">
-                        <div class="pic-a">
-                            <a href="https://www.facebook.com/ShinHaeSun0831.TW"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                            <a href="https://www.instagram.com/shinhs831/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            <a href="https://zh.wikipedia.org/wiki/%E7%94%B3%E6%83%A0%E5%96%84"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a>
-                        </div>
+        <div class="tc-outside">
+            <div class="tc">
+                <div class="title-container">
+                    <div class="title">
+                        <h2>講師陣容</h2>
+                        <p>我們的講師長期專注於網站開發技術領域，透過研討會、社群演講及授課方式將技術知識分享給更多人知道，讓更多人了解各個技術的美好之處。</p>
                     </div>
-                    <div class="txt">
-                        <h5>韓國女演員</h5>
-                        <h3>申惠善 (신혜선)</h3>
-                        <article>
-                            <p>韓國女演員。2012年12月，申惠善在KBS月火劇《學校2013》實名飾演學生並正式以演員身份出道。</p>
-                            <p>2017年9月，在KBS週末劇<a class="wikikd" href="https://zh.wikipedia.org/wiki/%E6%88%91%E7%9A%84%E9%BB%83%E9%87%91%E5%85%89%E8%BC%9D%E4%BA%BA%E7%94%9F" target="_blank">《我的黃金光輝人生》</a>，首次擔任女主角[2]，該劇播出後收視率一路走高，成為KBS電視台2017年電視劇收視冠軍，並創下47.5的收視紀錄，人氣急升。</p>
-                            <p>後續主演<a class="wikikd" href="https://zh.wikipedia.org/wiki/%E9%9B%96%E7%84%B630%E4%BD%86%E4%BB%8D17" target="_blank">《雖然30但仍17》</a>、<a class="wikikd" href="https://zh.wikipedia.org/wiki/%E6%AD%BB%E7%9A%84%E8%AE%9A%E7%BE%8E" target="_blank">《死之詠贊》</a>、《僅此一次的愛情》等電視劇，分別飾演小提琴家、聲樂家、芭蕾舞者等角色，而有<strong>「御用藝術家」</strong>、<strong>「值得信任的演員」</strong>、<strong>「名品演技」</strong>之稱。</p>
-                            <p>2020年12月憑<a class="wikikd" href="https://zh.wikipedia.org/wiki/%E5%93%B2%E4%BB%81%E7%8E%8B%E5%90%8E_(%E9%9B%BB%E8%A6%96%E5%8A%87)" target="_blank">《哲仁王后》</a>中飾演金昭容一角，再次攀上事業高峰。 </p>
-                            <br>
-                            <div class="other-title">
-                                <p>其他影視作品</p>
+                </div>
+                <div class="container">
+                    <div class="content">
+                        <div class="pic">
+                            <img src="tcpic01.jpg" alt="">
+                            <div class="pic-a">
+                                <a href="https://www.facebook.com/ShinHaeSun0831.TW"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/shinhs831/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://zh.wikipedia.org/wiki/%E7%94%B3%E6%83%A0%E5%96%84"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a>
                             </div>
-                            <div class="other-products">
-                                <a href="https://zh.wikipedia.org/wiki/%E7%BF%BB%E4%BE%9B" target="_blank">翻供</a>
-                                <a href="https://zh.wikipedia.org/wiki/%E7%A7%98%E5%AF%86%E6%A3%AE%E6%9E%97" target="_blank">秘密森林</a>
-                            </div>
-                        </article>
+                        </div>
+                        <div class="txt">
+                            <h5>韓國女演員</h5>
+                            <h3>申惠善 (신혜선)</h3>
+                            <article>
+                                <p>韓國女演員。2012年12月，申惠善在KBS月火劇《學校2013》實名飾演學生並正式以演員身份出道。</p>
+                                <p>2017年9月，在KBS週末劇<a class="wikikd" href="https://zh.wikipedia.org/wiki/%E6%88%91%E7%9A%84%E9%BB%83%E9%87%91%E5%85%89%E8%BC%9D%E4%BA%BA%E7%94%9F" target="_blank">《我的黃金光輝人生》</a>，首次擔任女主角[2]，該劇播出後收視率一路走高，成為KBS電視台2017年電視劇收視冠軍，並創下47.5的收視紀錄，人氣急升。</p>
+                                <p>後續主演<a class="wikikd" href="https://zh.wikipedia.org/wiki/%E9%9B%96%E7%84%B630%E4%BD%86%E4%BB%8D17" target="_blank">《雖然30但仍17》</a>、<a class="wikikd" href="https://zh.wikipedia.org/wiki/%E6%AD%BB%E7%9A%84%E8%AE%9A%E7%BE%8E" target="_blank">《死之詠贊》</a>、《僅此一次的愛情》等電視劇，分別飾演小提琴家、聲樂家、芭蕾舞者等角色，而有<strong>「御用藝術家」</strong>、<strong>「值得信任的演員」</strong>、<strong>「名品演技」</strong>之稱。</p>
+                                <p>2020年12月憑<a class="wikikd" href="https://zh.wikipedia.org/wiki/%E5%93%B2%E4%BB%81%E7%8E%8B%E5%90%8E_(%E9%9B%BB%E8%A6%96%E5%8A%87)" target="_blank">《哲仁王后》</a>中飾演金昭容一角，再次攀上事業高峰。 </p>
+                                <br>
+                                <div class="other-title">
+                                    <p>其他影視作品</p>
+                                </div>
+                                <div class="other-products">
+                                    <a href="https://zh.wikipedia.org/wiki/%E7%BF%BB%E4%BE%9B" target="_blank">翻供</a>
+                                    <a href="https://zh.wikipedia.org/wiki/%E7%A7%98%E5%AF%86%E6%A3%AE%E6%9E%97" target="_blank">秘密森林</a>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -2444,59 +2510,61 @@
         </div>
 
         <!-- learning paths -->
-        <div class="lp">
-            <div class="title-container">
-                <div class="title">
-                    <h2>掌握自己的學習路徑</h2>
-                    <p>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性的線上課程、假日班，任您自由選擇。</p>
+        <div class="lp-outside">
+            <div class="lp">
+                <div class="title-container">
+                    <div class="title">
+                        <h2>掌握自己的學習路徑</h2>
+                        <p>針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課程，與彈性的線上課程、假日班，任您自由選擇。</p>
+                    </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="content"><a href="#">
-                        <div class="pic pic1">
-                            <div class="info">
-                                <h3>I'm coding it!
-                                    <br>
-                                    微痛轉職工程師
-                                </h3>
+                <div class="container">
+                    <div class="content"><a href="#">
+                            <div class="pic pic1">
+                                <div class="info">
+                                    <h3>I'm coding it!
+                                        <br>
+                                        微痛轉職工程師
+                                    </h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="txt">
-                            <h4>線上課程</h4>
-                            <p>不限時間、地點，自己掌握學習進度。課程內容包含前後端課程，附加完課即提供免費履歷健檢服務。適合在職、喜歡自己掌握進度的人。</p>
-                            <span>前往課程<i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                        </div>
-                    </a></div>
-                <div class="content"><a href="#">
-                        <div class="pic pic2">
-                            <div class="info">
-                                <h3>全方位
-                                    <br>
-                                    網頁設計前後實戰
-                                </h3>
+                            <div class="txt">
+                                <h4>線上課程</h4>
+                                <p>不限時間、地點，自己掌握學習進度。課程內容包含前後端課程，附加完課即提供免費履歷健檢服務。適合在職、喜歡自己掌握進度的人。</p>
+                                <span>前往課程<i class="fa fa-chevron-right" aria-hidden="true"></i></span>
                             </div>
-                        </div>
-                        <div class="txt">
-                            <h4>全方位培訓營</h4>
-                            <p>課程包含 Git / HTML / JavaScript / Ruby on Rails 適合在職或希望利用假日上課的人。</p>
-                            <span>前往課程<i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                        </div>
-                    </a></div>
-                <div class="content"><a href="#">
-                        <div class="pic pic3">
-                            <div class="info">
-                                <h3>ASTRO Camp
-                                    <br>
-                                    全端工程師實戰訓練營
-                                </h3>
+                        </a></div>
+                    <div class="content"><a href="#">
+                            <div class="pic pic2">
+                                <div class="info">
+                                    <h3>全方位
+                                        <br>
+                                        網頁設計前後實戰
+                                    </h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="txt">
-                            <h4>三個月實戰轉職全端工程師</h4>
-                            <p>除了提供前端到後端課程外，課程期間還包含履歷健檢、模擬面試、專題製作、企業交流等服務。適合有時間決心轉職工程師的素人。</p>
-                            <span>前往課程<i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                        </div>
-                    </a></div>
+                            <div class="txt">
+                                <h4>全方位培訓營</h4>
+                                <p>課程包含 Git / HTML / JavaScript / Ruby on Rails 適合在職或希望利用假日上課的人。</p>
+                                <span>前往課程<i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                            </div>
+                        </a></div>
+                    <div class="content"><a href="#">
+                            <div class="pic pic3">
+                                <div class="info">
+                                    <h3>ASTRO Camp
+                                        <br>
+                                        全端工程師實戰訓練營
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <h4>三個月實戰轉職全端工程師</h4>
+                                <p>除了提供前端到後端課程外，課程期間還包含履歷健檢、模擬面試、專題製作、企業交流等服務。適合有時間決心轉職工程師的素人。</p>
+                                <span>前往課程<i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                            </div>
+                        </a></div>
+                </div>
             </div>
         </div>
 
