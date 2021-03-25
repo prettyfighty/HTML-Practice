@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-
-        .box :nth-of-type(2){
-            background-color: #f00;
-        }
-
-
-
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 + p{
+      color: red;
+    }
+    nav a{
+      padding: 0 20px;
+      
+    }
+    nav a + a{
+      border-left: 1px solid red;
+    }
+  </style>
 </head>
 <body>
-    <div class="box">
-        <div>div</div>
-        <span>span</span>
-        <div>div</div>
-        <span>span</span>
-        <div>div</div>
-        <span>span</span>
-        <div>div</div>
-        <span>span</span>
-        <div>div</div>
-        <span>span</span>
-    </div>
-    
+
+  <h1>h1</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ratione?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ratione?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ratione?</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ratione?</p>
+  <h2>h2</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quisquam?</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quisquam?</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, quisquam?</p>
+
+  <nav>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+  </nav>
+
+
+  
 </body>
 </html>
