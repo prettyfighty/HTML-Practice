@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota - 五大優勢</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+         
+        *{
+            padding: 0; 
+            margin: 0; 
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .wrap{
+            width: 100%;
+            max-width: 2440px;
+            position: relative;
+        }
+        .container{
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: relative;
+            width: 100%;
+            max-width: 960px;
+        }
+        .wrap > .container:nth-child(2){
+            transform: translateY(-80px);
+        }
+        .wrap > .container:nth-child(3){
+            transform: translateY(-270px);
+        }
+        .wrap > .container:nth-child(4){
+            transform: translateY(-340px);
+        }
+        .wrap > .container:nth-child(5){
+            transform: translateY(-520px);
+        }
+        .bg{
+            background-color: #ccc;
+            opacity: .15;
+            width: 439px;
+            height: 290px;
+            z-index: 1;
+            position: relative;
+            top: 40px;
+            left: 521px;
+        }
+        .wrap > .container:nth-child(2n) .bg{
+            width: 518px;
+            height: 413px;
+            top: 70px;
+            left: 275px;
+        }
+        .pic{
+            width: 695px;
+            height: 430px;
+            z-index: 2;
+            position: relative;
+            left: 185px;
+            top: -180px;
+        }
+        .wrap > .container:nth-child(2n) .pic{
+            left: 0;
+            top: -305px;
+        }
+
+        .pic a{
+            position: relative;
+        }
+
+        .pic .video-button{
+            width: 57px;
+            height: 36px;
+            background-color: #900;
+            display: inline-block;
+            position: relative;
+            left: 650px;
+            top: 250px;
+            z-index: 5;
+        }
+        .wrap > .container:nth-child(2n) .video-button{
+            left: -7px;
+        }
+        .pic .video-button::before{
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 20px solid #fff;
+            border-top: 10px solid #900;
+            border-bottom: 10px solid #900;
+            display: inline-block;
+            position: relative;
+            left: 20px;
+            top: 8px;
+        }
+        .pic img{
+            width: 100%;
+            vertical-align: middle;
+            position: relative;
+        }
+        .title{
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #fff;
+            width: 355px;
+            display: flex;
+            flex-direction: column;
+            z-index: 3;
+        }
+        
+        .wrap > .container:nth-child(2n) .title{
+            right: 0;
+            margin-left: auto;
+        }
+
+        .title .main-title{
+            background-color: #a00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .title .main-title span{
+            font-size: 100px;
+            font-weight: 100;
+            transform: rotate(90deg);
+            position: relative;
+        }
+        .title .main-title h1{
+            font-size: 50px;
+            font-weight: 400;
+            letter-spacing: 5px;
+        }
+        .wrap > .container:nth-child(2n) .main-title h1{
+            order: -1;
+        }
+        .title .txt{
+            background-color: #000;
+            padding: 10px 20px 2em;
+        }
+
+        .title .txt h2{
+            font-size: 26px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            line-height: 2;
+        }
+        .title .txt p{
+            font-size: 20px;
+            font-weight: 100;
+            line-height: 1.5;
+            letter-spacing: 2px;
+        }
+
+        .content{
+            background-color: #eee;
+            width: 682px;
+            padding: 15px 25px;
+            box-sizing: border-box;
+            z-index: 4;
+            position: relative;
+            top: -173px;
+            left: 50px;
+        }
+        .wrap > .container:nth-child(2n) .content{
+            left: 278px;
+            top: -298px;
+        }
+        .content-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 1em;
+
+        }
+        .content span{
+            color: #a00;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .content .line{
+            display: block;
+            width: 445px;
+            border-top: 1px solid #a00;
+            
+        }
+        .content h3{
+            color: #fff;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 300;
+            background-color: #000;
+            padding: 0px 8px 3px;
+            border-radius: 3px;
+        }
+        .content-p{
+            color: #a00;
+            display: inline-block;
+            padding: 6px 0;
+            display: flex;
+        }
+        .content-p::before{
+            content: '．';
+            color: #a00;
+            
+        }
+        .content p{
+            font-size: 16px;
+            color: #666;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="container">
+            <div class="bg"></div>
+            <div class="pic">
+                <a href="#"><span class="video-button"></span><img src="https://picsum.photos/695/430/?random=1"></a>
+            </div>
+            <div class="title">
+                <div class="main-title">
+                    <span>01</span>
+                    <h1>操縱樂趣</h1>
+                </div>
+                <div class="txt">
+                    <h2>人人滿意的駕駛體驗</h2>
+                    <p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-top">
+                    <span>因為我們做了這些革新</span>
+                    <span class="line"></span>
+                </div>
+                <h3>低重心設計</h3>
+                <div class="content-p">
+                    <p>透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側傾，保持高速行駛穩定性。</p>
+                </div>
+                <h3>車體剛性強化</h3>
+                <div class="content-p">
+                    <p>車身結構採用超高強度鋼材，提高車輛穩定性，同時藉由雷射強化焊接技術，大幅增加焊點數量，提升車身抗扭剛性，強化駕駛穩定性及安全性。</p>
+                </div>
+                <h3>四輪獨立懸吊</h3>
+                <div class="content-p">
+                    <p>搭載全新四輪獨立懸吊設定，透過懸吊的高承載強度，保持輪胎抓地力，同時兼顧轉向靈敏度與清晰路感回饋，提升駕馭樂趣。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="bg"></div>
+            <div class="pic">
+                <a href="#"><span class="video-button"></span><img src="https://picsum.photos/695/430/?random=2"></a>
+            </div>
+            <div class="title">
+                <div class="main-title">
+                    <span>02</span>
+                    <h1>安全守護</h1>
+                </div>
+                <div class="txt">
+                    <h2>行車更安心的高剛性車體</h2>
+                    <p>您的愛車會妥善保護您，強悍穩固的車身可使您安全無虞。世界級的安全功能讓您輕鬆自如享受旅程、毫無後顧之憂。</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-top">
+                    <span>因為我們做了這些革新</span>
+                    <span class="line"></span>
+                </div>
+                <h3>主動安全</h3>
+                <div class="content-p">
+                    <p>以先進的TSS系統，主動偵測路況，輔助駕駛判斷路況並維持行車安全。</p>
+                </div>
+                <h3>被動安全</h3>
+                <div class="content-p">
+                    <p>堅固的高剛性車體，使用熱沖壓材料的高強度抗扭鋼板，強化座艙對意外事故保護力。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="bg"></div>
+            <div class="pic">
+                <a href="#"><span class="video-button"></span><img src="https://picsum.photos/695/430/?random=3"></a>
+            </div>
+            <div class="title">
+                <div class="main-title">
+                    <span>03</span>
+                    <h1>乘坐舒適</h1>
+                </div>
+                <div class="txt">
+                    <h2>令人放鬆舒適的車室空間</h2>
+                    <p>車室空間設計著重人體工學，透過方向盤、踏板等位置優化，追求更舒適的駕駛位置，並以新型座椅設計，提高座椅包覆性，致力實現長途駕駛不疲勞的舒適駕馭體驗。</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-top">
+                    <span>因為我們做了這些革新</span>
+                    <span class="line"></span>
+                </div>
+                <h3>駕駛位置最佳化</h3>
+                <div class="content-p">
+                    <p>針對駕駛位置進行徹底的修改，讓駕馭者可如同握手般自然且舒適地操縱方向盤。</p>
+                </div>
+                <h3>駕馭視野佳</h3>
+                <div class="content-p">
+                    <p>考量駕駛坐進車內的高度，透過前擋風玻璃位置的調整，達到盲區極小化，使駕駛視野更開闊，同步提升駕馭安全。</p>
+                </div>
+                <h3>更寧靜的車室</h3>
+                <div class="content-p">
+                    <p>採用最新三層結構的隔音材料，與引擎、變速箱的零件改革，將座艙的震動抑制在最小限度，提供乘客舒適安靜的感受。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="bg"></div>
+            <div class="pic">
+                <a href="#"><span class="video-button"></span><img src="https://picsum.photos/695/430/?random=4"></a>
+            </div>
+            <div class="title">
+                <div class="main-title">
+                    <span>04</span>
+                    <h1>以人為本</h1>
+                </div>
+                <div class="txt">
+                    <h2>使用者導向的貼心設計</h2>
+                    <p>藉由高度人性化的介面整合、傳遞車輛資訊，豐富日常駕駛體驗。從提升油耗表現到行李廂空間最適化，均細心考量，更加貼近使用者真正所需與習慣，並給予即時回應。</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-top">
+                    <span>因為我們做了這些革新</span>
+                    <span class="line"></span>
+                </div>
+                <h3>優異油耗表現</h3>
+                <div class="content-p">
+                    <p>以AURIS為例，更強勁的高效引擎將熱效率提升至40%，達到世界級水準，屢屢突破燃油效率新境界。</p>
+                </div>
+                <h3>行李箱空間最適化</h3>
+                <div class="content-p">
+                    <p>以PRIUS為例，透過將電池位置移到後座下方，讓行李箱擁有更大的空間。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="bg"></div>
+            <div class="pic">
+                <a href="#"><span class="video-button"></span><img src="https://picsum.photos/695/430/?random=1"></a>
+            </div>
+            <div class="title">
+                <div class="main-title">
+                    <span>05</span>
+                    <h1>引以為傲</h1>
+                </div>
+                <div class="txt">
+                    <h2>極具吸引力的精心設計</h2>
+                    <p>TNGA車款擁有讓人忍不住回頭的新潮外觀、讓駕駛充滿自信的駕馭快感！不僅讓車主能展現個人風格，也能讓擁有者都能引以為傲。</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-top">
+                    <span>因為我們做了這些革新</span>
+                    <span class="line"></span>
+                </div>
+                <h3>設計概念</h3>
+                <div class="content-p">
+                    <p>TNGA低重心設計，不僅呈現更低伏的運動化外觀，更講究高品質內裝的一致性。</p>
+                </div>
+                <h3>環保概念</h3>
+                <div class="content-p">
+                    <p>為了對環境保護盡一份心力，我們全面提升傳統引擎、變速箱與油電複合動力的動力效能。</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
