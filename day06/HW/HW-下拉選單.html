@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收合式下拉選單(橫式)</title>
+    <style>
+        @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+        *{
+            padding: 0; 
+            margin: 0; 
+            list-style: none;
+        }
+        *::selection{
+            background-color: rgb(226, 131, 107);
+            color: #fff;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(90deg, #ffa,#aaf)
+        }
+        #header-control{
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+        #header-control:checked + .header .fa{
+            transform: scaleX(-1);
+        }
+        #header-control:checked + .header{
+            width: 1200px;
+
+        }
+        .header{
+            width: 300px;
+            border-bottom: 1px solid #aaa;
+            position: relative;
+            transition: 1s;
+        }
+        .header label{
+            position: absolute;
+            right: -20px;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+        }
+        .header label:hover{
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 1);
+        }
+        
+        .nav{
+            display: flex;
+            justify-content: center;
+        }
+        .nav a{
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            padding: 10px 2em 10px 1em;
+            text-align: center;
+        }
+        .nav .fa{
+            width: 1em;
+            transform: scale(0);
+        }
+        .nav li{
+            position: relative;
+        }
+        .nav > li + li::before{
+            content: '';
+            position: absolute;
+            top: 13px;
+            bottom: 10px;
+            margin: auto;
+            border-left: 1px solid #f00;
+        }
+        .nav li:hover > ul{
+            display: block;
+        }
+        .nav li:hover > a{
+            background-color: #ffffaa50;
+        }
+        .nav > li:hover > a{
+            padding: 10px 1.5em 10px 1em;
+        }
+        .nav li:hover > a .fa{
+            padding-right: .5em;
+            transform: scale(1);
+        }
+        .nav ul{
+            display: none;
+            position: absolute;
+            border: 1px dashed #f00;
+            /* width: 130px; */
+            box-shadow: 5px 5px 10px 3px rgba(128, 128, 109,.5);
+        }
+        ul > li + li::before{
+            content: '';
+            position: absolute;
+            left: 5px;
+            right: 5px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-top: 1px solid #aaa;
+        }
+
+        .second{
+            top: 0;
+            left: 100%;
+            width: 96px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="header-control">
+    <div class="header">
+        <div class="nav">
+            <li><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>我是裝飾</a></li>
+            <li>
+                <a href="#"><i class="fa fa-location-arrow" aria-hidden="true"></i>我是真的</a>
+                <ul class="first">
+                    <li><a href="#">我是假的</a></li>
+                    <li><a href="#">我是假的</a></li>
+                    <li>
+                        <a href="#">我是真的</a>
+                        <ul class="second">
+                            <li><a href="#">沒有了</a></li>
+                            <li><a href="#">沒有了</a></li>
+                            <li><a href="#">沒有了</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">我是假的</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fa fa-file-o" aria-hidden="true"></i>我是裝飾</a></li>
+            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>我是裝飾</a></li>
+            <li><a href="#"><i class="fa fa-history" aria-hidden="true"></i>我是裝飾</a></li>
+        </div>
+        <label for="header-control">
+            <i class="fa fa-angle-right"></i>
+        </label>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
