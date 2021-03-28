@@ -22,7 +22,7 @@
         body{
             display: flex;
             justify-content: center;
-            align-items: center;
+            /* align-items: center; */
             background: linear-gradient(90deg, #ffa,#aaf)
         }
         #header-control{
@@ -30,18 +30,30 @@
             opacity: 0;
             z-index: -1;
         }
-        #header-control:checked + .header .fa{
+        #header-control:checked + .header > label .fa{
             transform: scaleX(-1);
         }
         #header-control:checked + .header{
             width: 1200px;
-
+            /* transform: scaleX(1); */
+            transform: translate(0);
         }
+        #header-control:checked + .header .nav{
+            justify-content: center;
+            /* visibility: visible; */
+            opacity: 1;
+            transform: scale(1);
+        }
+        
         .header{
-            width: 300px;
+            bottom: 30%;
+            margin: auto;
+            width: 30px;
             border-bottom: 1px solid #aaa;
             position: relative;
-            transition: 1s;
+            transform: translate(-600px,-48px);
+            transition: .75s;
+            
         }
         .header label{
             position: absolute;
@@ -60,24 +72,44 @@
             background-color: rgba(0, 0, 0, 1);
         }
         
-        .nav{
+        .nav{                
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
+            /* visibility: hidden; */
+            opacity: 0;
+            transform: scale(0);
+            transition: opacity .75s ease-in-out, transform .5s;
         }
         .nav a{
-            display: inline-block;
+            display: block;
             text-decoration: none;
             color: #333;
             padding: 10px 2em 10px 1em;
-            text-align: center;
+            /* text-align: center; */
         }
         .nav .fa{
             width: 1em;
             transform: scale(0);
         }
-        .nav li{
+        .arrow-right{
             position: relative;
         }
+        .arrow-right::after{
+            content: '';
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: 20px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 7px solid rgba(0, 0, 0, 0.5);
+        }
+        .nav li{
+            position: relative;
+        }        
         .nav > li + li::before{
             content: '';
             position: absolute;
@@ -103,24 +135,34 @@
             display: none;
             position: absolute;
             border: 1px dashed #f00;
-            /* width: 130px; */
+            width: 150px;
             box-shadow: 5px 5px 10px 3px rgba(128, 128, 109,.5);
         }
         ul > li + li::before{
             content: '';
             position: absolute;
-            left: 5px;
-            right: 5px;
-            top: 0;
-            bottom: 0;
-            margin: auto;
+            left: 15px;
+            right: 15px;
             border-top: 1px solid #aaa;
         }
-
         .second{
             top: 0;
             left: 100%;
-            width: 96px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .third{
+            top: 0;
+            left: 100%;
+        }
+        .third li .fa{
+            margin-right: -1em;
+            transition: .2s;
+        }
+        .third li:hover .fa{
+            margin-right: 0;
+            padding-right: .2em;
         }
 
 
@@ -131,26 +173,33 @@
     <input type="checkbox" id="header-control">
     <div class="header">
         <div class="nav">
-            <li><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>我是裝飾</a></li>
+            <li><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i>五倍紅寶石</a></li>
             <li>
-                <a href="#"><i class="fa fa-location-arrow" aria-hidden="true"></i>我是真的</a>
+                <a href="#"><i class="fa fa-location-arrow" aria-hidden="true"></i>ASTRO Camp</a>
                 <ul class="first">
-                    <li><a href="#">我是假的</a></li>
-                    <li><a href="#">我是假的</a></li>
+                    <li><a href="#">Ruby</a></li>
+                    <li><a href="#">Rails</a></li>
                     <li>
-                        <a href="#">我是真的</a>
+                        <a href="#" class="arrow-right">HTML5</a>
                         <ul class="second">
-                            <li><a href="#">沒有了</a></li>
-                            <li><a href="#">沒有了</a></li>
-                            <li><a href="#">沒有了</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                            <li>
+                                <a href="#" class="arrow-right">Homework</a>
+                                <ul class="third">
+                                    <li><a href="#"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>Shopee</a></li>
+                                    <li><a href="HW-Toyota.html" target="_blank"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>Toyota</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
-                    <li><a href="#">我是假的</a></li>
+                    <li><a href="#">Git</a></li>
                 </ul>
             </li>
-            <li><a href="#"><i class="fa fa-file-o" aria-hidden="true"></i>我是裝飾</a></li>
-            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>我是裝飾</a></li>
-            <li><a href="#"><i class="fa fa-history" aria-hidden="true"></i>我是裝飾</a></li>
+            <li><a href="#"><i class="fa fa-file-o" aria-hidden="true"></i>清明節</a></li>
+            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>兒童節</a></li>
+            <li><a href="#"><i class="fa fa-history" aria-hidden="true"></i>勞動節</a></li>
         </div>
         <label for="header-control">
             <i class="fa fa-angle-right"></i>
