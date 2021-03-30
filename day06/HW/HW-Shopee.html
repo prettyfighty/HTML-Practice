@@ -99,7 +99,9 @@
         }
         .wrap a:hover .item{
             border: 1px solid #ee4d2d;
-            top: -2px;
+            /* top: -2px; */
+            z-index: 5;
+            transform: translateY(-2px);
         }
         .wrap a:hover .item::after{
             visibility: visible;
