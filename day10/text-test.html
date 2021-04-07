@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap{
+      background: url('https://picsum.photos/1400/200/?random=1');
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 20vw;
+      text-align: center;
+      
+    }
+
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+    body { 
+      margin: 0;
+    }
+    div { 
+      text-align: center;
+      position: relative;
+    }
+    div h1 { 
+      margin: 0;
+      font-size: 20vw; 
+      text-transform: uppercase;
+      font-family: Montserrat, sans-serif;
+      line-height: 1.9;
+    }
+    .dark h1 {
+      color: #fff;
+    }
+    .light h1 {
+      color: #000;
+      font-size: 19vw;
+    }
+    div img { 
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;  
+    }
+    .dark {
+      background: #000;
+    }
+    .light {
+      background: #fff;
+    }
+    .dark img {
+      mix-blend-mode: darken;
+    }
+    .light img {
+      mix-blend-mode: lighten;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    text color test
+  </div>
+
+  <div class="dark">
+    <h1>Chicago</h1>
+   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/chicago.jpg" alt="Photograph of the Chicago skyline taken from the water during the day">
+ </div>
+ 
+ <div class="light">
+    <h1>Houston</h1>
+   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/houston.jpg" alt="Photograph of the Houston skyline taken from a tree-lined park">
+ </div>
+ 
+ 
+ <img src="https://picsum.photos/1400/100/?random=1">
+</body>
+</html>
